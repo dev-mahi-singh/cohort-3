@@ -1,0 +1,68 @@
+@font-face {
+    font-family: horror;
+    src: url('./Storm\ Gust.otf');
+}
+
+@font-face {
+    font-family: lucy;
+    src: url(./Lucy\ Said\ Ok\ Personal\ Use.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* h1 {
+    color: rgb(238, 113, 113);
+    background-color: rgb(19, 162, 209);
+    font-size: 50px;
+    font-family: Helvetica;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+} */
+
+/* h1{
+    color: red;
+    font-size: 50px;
+    font-family: horror;
+} */
+
+/* h1 {
+    font-size: 50px;
+    color: #fff;
+    background-color: pink;
+    font-family: lucy;
+} */
+
+/* div {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(to right bottom, rgb(231, 75, 114), rgb(29, 29, 209));
+    background: radial-gradient(rgb(209, 72, 72),rgb(98, 98, 233));
+    background: conic-gradient(red, blue, red);
+  }  */
+
+div {
+    height: 100%;
+    width: 100%;
+    background-image: url('https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: 0% 20%;
+}
+
+h1{
+    font-size: 100px;
+    font-weight: 300;
+    color: #9BA1AA;
+    font-family: lucy; 
+    text-align: center;
+}

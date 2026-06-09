@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 80px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* #box1 {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(239, 69, 103);
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    z-index: 9;
+}
+
+#box2 {
+    height: 200px;
+    width: 200px;
+    background-color: lightblue;
+    position: absolute;
+    top: 5%;
+    left: 60%;
+}
+
+#box3 {
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+} */
+
+#box {
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

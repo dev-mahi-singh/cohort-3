@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* body{
+    perspective: 1000px;
+}
+
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+    font-size: 80px;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: rotateY(90deg);
+    transform: skew(10deg);
+} */
+
+/* #parent {
+    height: 300px;
+    width: 400px;
+    background-color: crimson;
+    position: relative;
+}
+
+#child {
+    height: 200px;
+    width: 200px;
+    background-color: royalblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+
+/* .box {
+    height: 200px;
+    width: 200px;
+    background-color: lightseagreen;
+}
+
+.box:nth-child(2n) {
+    background-color: crimson;
+} */
+
+/* #parent{
+    height: 300px;
+    width: 300px;
+    background-color: lightblue;
+    padding: 0.1px;
+}
+
+#child{
+    height: 150px;
+    width: 150px;
+    background-color: bisque;
+    margin-left: 20px;
+    margin-top: 30px;
+} */
+
+.page{
+    height: 100%;
+    width: 100%;
+    background-color: royalblue;
+}
+
+.page:nth-child(2){
+    background-color: rgb(52, 76, 149);
+}
+
+.page:nth-child(3){
+    background-color: rgb(7, 26, 82);
+}
+
+.page:nth-child(4){
+    background-color: rgb(26, 61, 167);
+}
+
+#box{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    position: sticky;
+    top: 30%;
+    left: 40%;
+}

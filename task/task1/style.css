@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.left{
+    height: 100%;
+    width: 60%;
+    background-color: #fcc60c;
+    position: relative;
+    padding: 0px 60px 60px 60px;
+}
+
+.logo{
+    height: 18%;
+    width: 20%;
+    margin-bottom: 60px;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.poke{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #3b2408;
+}
+
+.left h1{
+    font-size: 110px;
+    font-weight: 700;
+}
+
+.text{
+    width: 60%;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #7f7222;
+}
+
+.next{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.line{
+    width: 60px;
+    height: 3px;
+    background-color: #000;
+}
+
+.circle{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 13px solid #e2b20c;
+    border-radius: 50%;
+    bottom: -55px;
+    left: 30;
+}
+
+.right{
+    height: 100%;
+    width: 40%;
+    background-color: #fbe8b5;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.menu i{
+    font-size: 45px;
+}
+
+.pikachu{
+    position: absolute;
+    left: -32%;
+}
+
+.dots{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.dots div{
+    height: 12px;
+    width: 12px;
+    background-color: #f6da75;
+    border-radius: 50%;
+}
+
+.dots div:nth-child(1){
+    background-color: #000;
+}

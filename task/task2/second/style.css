@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI Variable Display';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    height: 100%;
+    width: 50%;
+    background-color: #fefefe;
+}
+
+.nav1 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 69px;
+    padding: 30px;
+}
+
+.nav1 h2 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1c332f;
+}
+
+.search i {
+    position: absolute;
+    top: 54px;
+    transform: translateY(-50%);
+    left: 197px;
+    font-size: 18px;
+    padding-left: 5px;
+    color: #a8a8aa;
+}
+
+.search input {
+    padding: 12px 70px 12px 45px;
+    outline: none;
+    border: none;
+    background-color: #eff0f0;
+    border-radius: 40px;
+    font-size: 16px;
+}
+
+.left-content {
+    height: 80%;
+    width: 80%;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.left-content h1 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin: 0;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: georgia;
+    font-style: italic;
+}
+
+.left-content .part2 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dot {
+    margin-top: 6px;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #b93637;
+}
+
+.type {
+    width: 50%;
+    border-bottom: 2px solid #efefef;
+    padding-bottom: 12px;
+}
+
+.type p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.type p:nth-child(1) {
+    font-weight: 600;
+}
+
+
+.right {
+    height: 100%;
+    width: 50%;
+    background-color: #ba3a30;
+    color: #eff0f0;
+}
+
+.right .nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 70px;
+}
+
+.right .nav2 h4 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.right .main {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main h1 {
+    color: #fefefe;
+    font-family: serif;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.main1 {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 15px;
+    position: relative;
+}
+
+.line{
+    height: 105px;
+    width: 2px;
+    background-color: rgb(222, 220, 220);
+    top: 17px;
+    left: 110px;
+    position: absolute;
+}
+
+.insect{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 19px;
+}
+
+.insect img{
+    height: 140px;
+}
+
+.text-part {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 12px;
+}
+
+.icon {
+    font-size: 22px;
+    color: #e1c497;
+}
+
+.text {
+    width: 90%;
+    padding-bottom: 16px;
+}
+
+.text p {
+    padding-top: 3px;
+    font-size: 15px;
+}
+
+.collection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    flex-direction: column;
+}
+
+.collection h1 {
+    font-size: 38px;
+    font-weight: 500;
+    font-family: Helvetica;
+    margin-right: 44px;
+}
+
+.toggle-box {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 100px;
+    gap: 9px;
+    width: 350px;
+}
+
+.toggle {
+    height: 20px;
+    width: 32px;
+    border-radius: 12px;
+    background-color: #ca7c70;
+    position: relative;
+}
+
+.circle {
+    top: 2px;
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background-color: #eff0f0;
+}
+
+.toggle-text {
+    font-size: 14px;
+    color: #e9cacf;
+}
+
+.collection button {
+    margin-left: 11px;
+    padding: 12px 34px;
+    color: #665a47;
+    background-color: #d9bc92;
+    border: none;
+    border-radius: 8px;
+}
+
+.center{
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 50px;
+}

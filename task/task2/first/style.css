@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: #010000;
+    color: #fff;
+}
+
+.nav {
+    height: 67px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+}
+
+.nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav img {
+    height: 50px;
+}
+
+.nav .logo h2 {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.nav .part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+
+}
+
+.nav .part2 h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #0D0D0D;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.nav button:hover{
+background-color: #303030;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.content .top h1 {
+    font-size: 150px;
+    font-weight: 600;
+}
+
+.content .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 5px 0px;
+}
+
+.bottom div {
+    padding: 8px 17px;
+    background-color: #111111;
+    border-radius: 17px;
+    text-align: center;
+    transition: all ease 0.5s;
+}
+
+.bottom div:nth-child(1) {
+    background-color: #D63B08;
+}
+
+.bottom div:hover {
+    background-color: #aa3a14;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px 0px 0px;
+    gap: 25px;
+}
+
+.card {
+    height: 360px;
+    width: 325px;
+    background-color: #0D0D0D;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.card .photo {
+    height: 55%;
+    width: 100%;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.3s;
+}
+
+.card .photo:hover img {
+    transform: scale(1.2);
+}
+
+.card .text {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3px;
+    padding: 15px;
+}
+
+.card .text .type {
+    padding: 8px 17px;
+    border-radius: 18px;
+    background-color: #481908;
+    color: #CE825B;
+    transition: all ease 0.5s;
+}
+
+.card .type:hover {
+    background-color: #6a240d;
+}
+
+.text h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.text .date {
+    font-size: 15px;
+    color: #545454;
+    padding-bottom: 9px;
+}

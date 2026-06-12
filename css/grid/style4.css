@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "top-left top-center right"
+        "bottom-left bottom-left right"
+
+    ;
+}
+
+.top-left {
+    background-color: rgb(23, 65, 87);
+    grid-area: top-left;
+}
+
+.top-center {
+    background-color: rgb(131, 4, 154);
+    grid-area: top-center;
+}
+
+.right {
+    background-color: rgb(6, 136, 249);
+    grid-area: right;
+}
+
+.bottom-left {
+    background-color: rgb(22, 133, 119);
+    grid-area: bottom-left;
+}

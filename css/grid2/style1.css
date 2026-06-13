@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 22% 20% 7% 27% 22%;
+    grid-template-rows: 29% 24% 7% 18% 18%;
+    grid-template-areas:
+        "left-top top-center1 top-center1 top-center2 right-top"
+        "left-top center center center right-top"
+        "left-bottom center center center right-top"
+        "left-bottom center center center right-bottom"
+        "left-bottom bottom-center1 bottom-center2 bottom-center2 right-bottom"
+    ;
+    gap: 5px;
+}
+
+.left-top {
+    background-color: rgb(88, 219, 248);
+    grid-area: left-top;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.left-bottom {
+    background-color: rgb(239, 155, 169);
+    grid-area: left-bottom;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.top-center1 {
+    background-color: rgb(60, 89, 204);
+    grid-area: top-center1;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.top-center2 {
+    background-color: rgb(209, 12, 209);
+    grid-area: top-center2;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.center {
+    background-color: rgb(222, 129, 22);
+    grid-area: center;
+    border: 2px solid white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.bottom-center1 {
+    background-color: rgb(150, 78, 90);
+    grid-area: bottom-center1;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.bottom-center2 {
+    background-color: rgb(179, 12, 162);
+    grid-area: bottom-center2;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.right-top {
+    background-color: rgb(142, 58, 72);
+    grid-area: right-top;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.right-bottom {
+    background-color: rgb(219, 159, 169);
+    grid-area: right-bottom;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.circle {
+    height: 100%;
+    width: 47%;
+    background: radial-gradient(rgb(199, 159, 166), rgb(235, 117, 136));
+    border-radius: 50%;
+}
+
+.center img {
+    position: absolute;
+    bottom: 0;
+    height: 450px;
+}
+
+.bottom-center2-div1 {
+    padding: 20px;
+}
+
+.bottom-center2-div1 h3 {
+    font-size: 25px;
+}
+
+.bottom-center2-div1 p {
+    font-weight: 400;
+}
+
+.bottom-center2-div1 button {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.bottom-center2 img {
+    height: 90%;
+}
+
+.right-top img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: -10px;
+}

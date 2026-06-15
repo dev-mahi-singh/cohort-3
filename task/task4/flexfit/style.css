@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 24% 24% 24% 24%;
+    grid-template-areas:
+        "left-top center-part1 center-part2 right-top"
+        "left-top center center right-top"
+        "left-center center center right-bottom"
+        "left-bottom left-bottom center-bottom right-bottom"
+    ;
+    gap: 10px;
+    padding: 20px;
+}
+
+.left-top {
+    grid-area: left-top;
+    position: relative;
+    background-image: url(https://media.istockphoto.com/id/901960792/photo/man-straightens-his-jacket-isolated-on-light-background.jpg?s=612x612&w=0&k=20&c=DbkvIMpqGDda3uBej7AKUhxsTHVrh_tI1yYdBxKe3H8=);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.left-center {
+    background-color: white;
+    grid-area: left-center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(22, 21, 21);
+    border-radius: 20px;
+}
+
+.left-bottom {
+    background-color: #ecb1a2;
+    grid-area: left-bottom;
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 20px;
+}
+
+.center-part1 {
+    background-color: #E2C104;
+    grid-area: center-part1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.center-part2 {
+    background-color: white;
+    grid-area: center-part2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #000;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.center {
+    background-color: #fdf7e2;
+    grid-area: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-bottom {
+    background-color: blueviolet;
+    grid-area: center-bottom;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.right-top {
+    background-color: white;
+    grid-area: right-top;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.right-bottom {
+    background-color: #edb2a3;
+    grid-area: right-bottom;
+    border-radius: 20px;
+    padding: 10px;
+       overflow: hidden;
+
+}
+
+.left-top .logo{
+    height: 50px;
+    top: 4%;
+    left: 4%;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-top .logo img{
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.left-top .cards {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 15px;
+}
+
+.left-top .cards .card {
+    height: 40px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgba(36, 33, 33, 0.8);
+    color: white;
+    border-radius: 12px;
+    padding: 2px 3px;
+}
+
+.left-top .cards .card .circle {
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    background-color: #fcd806;
+}
+
+.left-top .cards .card p {
+    font-size: 15px
+}
+
+.left-top .cards p span {
+    font-size: 11px;
+}
+
+.left-center h1 {
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.left-center-part2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.left-center-part2 .circle {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.left-center-part2 .circle img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.left-center-part2 p {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.left-bottom .left-bottom-part1 {
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.left-bottom .left-bottom-part1 div{
+    height: 100%;
+    width: 90%;
+    background-color: #fdd803;
+}
+
+.left-bottom .left-bottom-part1 div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.left-bottom .left-bottom-part2 {
+    height: 100%;
+    width: 50%;
+    color: black;
+    text-transform: uppercase;
+    display: flex;
+    padding-left: 10px;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.left-bottom-part3 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.left-bottom-part2 h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.left-bottom-part3 p {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.left-bottom-part3 .expert {
+    font-size: 12px;
+}
+
+.left-bottom-part3 .profile img {
+    margin-top: 5px;
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: -10px;
+}
+
+.center-part1 h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.center-part1 i{
+    font-size: 45px;
+}
+
+.center-part1-butttons img{
+    height: 50%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.center-part2 .part1 h5{
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+.center-part2 .part2 p{
+    padding-top: 5px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.center-part2 .part3 img{
+    height: 70%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.center h1{
+    font-size: 90px;
+}
+
+.center img{
+    height: 50%;
+}
+
+.center-bottom img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.right-top .right-top-part1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right-top .right-top-part1 .left{
+    display: flex;
+    gap: 2px;
+}
+
+.right-top .right-top-part1 .left .box{
+    height: 20px;
+    width: 12px;
+    background-color: #000;
+}
+
+.right-top .right-top-part1 .left .box:nth-child(2){
+    background-color: #fcd405;
+}
+
+.right-top .right-top-part1 .right{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.right-top-part2 h1{
+    padding:10px 0px;
+    font-size: 40px;
+}
+
+.right-top-part3 {
+    height: 120px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #f0ae9f;
+    padding: 20px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.right-top-part3 .part1{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.right-top-part3 .part1 .location{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #E2C104;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-top-part3 p{
+    font-size: 15px;
+}
+
+.right-bottom .line{
+    height: 2px;
+    width: 90%;
+    background-color: #a68277;
+    margin-left: 10px;
+}
+
+.right-bottom-part2 {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-bottom-part2 .top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.right-bottom-part2 .top .logo{
+    height: 35px;
+    width: 35px;
+    background-color: #000;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.right-bottom-part2 .top .logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.right-bottom-part3 {
+   text-align: center;
+   position: relative;
+   color: white;
+}
+
+.right-bottom-part3 img{
+    height: 350px;
+}
+
+.right-bottom-part3 h2{
+    position: absolute;
+    bottom: 45%;
+    left: 25%;
+}
+
+.right-bottom-part3 button{
+    padding: 10px 29px;
+    border-radius: 20px;
+    background-color: #E2C104;
+    position: absolute;
+    bottom: 25%;
+    left: 25%;
+}

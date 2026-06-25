@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    background-color: royalblue;
+    width: fit-content;
+    transform: rotate(5deg);
+}
+
+h2{
+    background-color: palevioletred;
+    width: 40%;
+}
+
+a{
+    background-color: yellow;
+}
+
+span{
+    background-color: red;
+}
+
+#box{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: lightseagreen;
+    transform: rotate(5deg);
+}

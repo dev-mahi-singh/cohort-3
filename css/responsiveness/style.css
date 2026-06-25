@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* pixels (px) */
+
+#box {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(240, 98, 98);
+}
+
+#inner {
+    height: 100px;
+    width: 100px;
+    background-color: royalblue;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+/* percentage (%) */
+
+/* #parent {
+    height: 40%;
+    width: 40%;
+    background-color: royalblue;
+}
+
+#child {
+    height: 50%;
+    width: 50%;
+    background-color: crimson;
+} */
+
+/* Viewport width (vw) */
+
+/* #parent{
+    height: 200px;
+    width: 200px;
+    background-color: royalblue;
+}
+
+#child{
+    height: 50%;
+    width: 40vw;
+    background-color: lightblue;
+} */
+
+/* Viewport height (vh) */
+
+/* #box {
+    height: 40vh;
+    width: 40vw;
+    background-color: rgb(60, 154, 123);
+}
+
+h2{
+    font-size: 8vmax;
+} */
+
+/* vmax and vmin */
+
+#box1 {
+    height: 30vmax;
+    width: 30vmax;
+    background-color: lightseagreen;
+}
+
+#box2 {
+    height: 30vmin;
+    width: 30vmin;
+    background-color: seagreen;
+}

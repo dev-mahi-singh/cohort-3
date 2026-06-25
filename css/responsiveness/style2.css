@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* em */
+
+#parent {
+    background-color: rgb(1, 57, 69);
+    font-size: 20px;
+}
+
+/* h2{
+    font-size: 2em;
+}
+
+h4{
+    font-size: 1.5em;
+}
+
+h5{
+    font-size: 1em;
+}
+
+p{
+    font-size: 0.75em;
+} */
+
+/* rem */
+
+h2 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.75rem;
+}
+
+/* ch */
+
+/* h1 {
+    width: 25ch;
+    height: 20ex;
+    background-color: royalblue;
+} */
+
+/* min */
+
+/* #main {
+    min-height: 100%;
+    width: 100%;
+    background-color: rgb(15, 4, 35);
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    border: 2px solid white;
+} */
+
+/* max */
+
+#parent {
+    max-height: 100%;
+    width: 100%;
+    background-color: rgb(15, 4, 35);
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    border: 2px solid white;
+}
+
+/* min, max width */
+
+/* h1{
+    display: inline-block;
+    max-width: 50%;
+    background-color: red;
+} */
+
+/* clamp(min, preferred, max) */
+
+h1 {
+    font-size: calc(10px, 20px, 40px);
+}

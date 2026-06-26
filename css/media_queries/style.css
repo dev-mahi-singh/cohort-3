@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#box {
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+}
+
+h1 {
+    color: lightseagreen;
+}
+
+@media (max-width:300px) {
+    #box {
+        height: 100px;
+        width: 100px;
+        background-color: royalblue;
+        border-radius: 30px;
+    }
+
+    h1 {
+        font-size: 10px;
+        color: rgb(225, 183, 131);
+    }
+}

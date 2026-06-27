@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #111;
+}
+
+button{
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: transparent;
+    color: rgb(0, 191, 255);
+    border: 2px solid rgb(0, 191, 255);
+    font-weight: 600;
+    margin: 50px;
+    border-radius: 5px;
+    position: relative;
+    transition: all ease 0.4s;
+}
+
+button::after{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: rgb(0, 191, 255);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all ease 0.4s;
+}
+
+button:hover::after{
+    width: 100%;
+}
+
+button:hover{
+    color: white;
+}

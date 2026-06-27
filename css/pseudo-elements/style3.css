@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #111;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: transparent;
+    color: rgb(0, 191, 255);
+    border: 2px solid rgb(0, 191, 255);
+    font-weight: 600;
+    margin: 50px;
+    border-radius: 5px;
+    position: relative;
+    transition: all ease 0.3s;
+    overflow: hidden;
+}
+
+button::after {
+    content: "";
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(0, 191, 255);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: -1;
+    transition: all ease 0.4s;
+}
+
+button:hover::after {
+    transform: translate(-50%,-50%) scale(3.5);
+}
+
+button:hover {
+    color: white;
+}

@@ -1,0 +1,50 @@
+:root {
+    --king: rgb(231, 31, 151);
+    --queen: rgb(81, 179, 236);
+    --pad-btn:12px 22px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #111;
+}
+
+h2 span{
+    color: var(--king);
+}
+
+.btn1{
+      padding: var(--pad-btn);
+    border: none;
+    background-color: var(--king);
+}
+
+p span{
+    color: var(--king);
+}
+
+.sign{
+    padding: var(--pad-btn);
+    border: none;
+    background-color: var(--queen);
+}
+
+.log{
+    padding: var(--pad-btn);
+    border: none;
+    background-color: var(--queen);
+}

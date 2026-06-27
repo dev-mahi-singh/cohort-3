@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.red {
+    color: rgb(138, 37, 37);
+}
+
+.blue {
+    color: rgb(58, 58, 229);
+}
+
+.green {
+    color: rgb(3, 107, 3);
+}
+
+.large {
+    font-size: 40px;
+}

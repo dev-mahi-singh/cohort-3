@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    height: 300px;
+    position: absolute;
+    animation-name: dora;
+    animation-duration: 2s;
+    animation-delay: 1s;
+
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+img:hover{
+    animation-play-state: paused;
+}
+
+/* @keyframes dora {
+    0% {
+        left: 0;
+        top: 0%;
+    }
+
+    25% {
+        left: 75%;
+        top: 0%;
+    }
+
+    50% {
+        left: 75%;
+        top: 50%;
+    }
+
+    75% {
+        left: 0%;
+        top: 50%;
+    }
+
+    100% {
+        left: 0%;
+        top: 0%;
+    }
+} */
+
+
+@keyframes dora {
+    from {
+        rotate: 0;
+        left: 0;
+    }
+
+    to {
+        left: 75%;
+        rotate: 360deg;
+    }
+}

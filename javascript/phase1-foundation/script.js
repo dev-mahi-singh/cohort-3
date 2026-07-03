@@ -49,11 +49,27 @@
 // console.log(a);
 
 // Symbol
-var s1 = Symbol('hi');
-var s2 = Symbol('hi');
-console.log(s1);
-console.log(s2);
-console.log(s1 === s2);
+// var s1 = Symbol('hi');
+// var s2 = Symbol('hi');
+// console.log(s1);
+// console.log(s2);
+// console.log(s1 === s2);
 
+// alert()
+// alert("Welcome to my website!");
 
+// confirm
+// var ans = confirm('Are you  ready?');
+// console.log(ans);
 
+// prompt
+// var user = prompt('Enter your name');
+// console.log(user);
+
+// + : addition, concatenation
+var num1 = prompt("Enter number 1:");
+var num2 = prompt("Enter number 2:");
+console.log(num1 + num2);
+console.log(num1 - num2);
+console.log(num1 * num2);
+console.log(num1 / num2);

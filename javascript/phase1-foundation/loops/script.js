@@ -60,10 +60,19 @@ while (a <= num) {
 */
 
 // ask a user any number and print its table
-
+/*
 var num = Number(prompt("Enter a number"));
 var a = 1;
 while (a <= 10) {
     console.log(num + ' X ' + a + ' = ' + num * a);
     a++;
 }
+*/
+
+// do while loop
+
+do {
+    var pass = prompt('Enter password');
+} while (pass != '123')
+
+console.log('Welcome!');

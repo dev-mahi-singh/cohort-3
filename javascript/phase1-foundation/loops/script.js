@@ -80,10 +80,35 @@ console.log('Welcome!');
 
 // for loop
 
+// for (var a = 1; a <= 10; a++) {
+//     console.log(a);
+// }
+
+// for (var a = 10; a > 0; a--) {
+//     console.log(a);
+// }
+
+// break and continue
+
 for (var a = 1; a <= 10; a++) {
+    if (a == 5) {
+        break;
+    }
     console.log(a);
 }
 
-for (var a = 10; a > 0; a--) {
+for (var a = 1; a <= 10; a++) {
+    if (a == 5) {
+        continue;
+    }
+    console.log(a);
+}
+
+// Print even numbers
+
+for (var a = 1; a <= 10; a++) {
+    if (a % 2 != 0) {
+        continue;
+    }
     console.log(a);
 }

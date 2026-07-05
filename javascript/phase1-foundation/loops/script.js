@@ -70,9 +70,20 @@ while (a <= 10) {
 */
 
 // do while loop
-
+/*
 do {
     var pass = prompt('Enter password');
 } while (pass != '123')
 
 console.log('Welcome!');
+*/
+
+// for loop
+
+for (var a = 1; a <= 10; a++) {
+    console.log(a);
+}
+
+for (var a = 10; a > 0; a--) {
+    console.log(a);
+}

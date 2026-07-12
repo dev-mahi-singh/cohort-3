@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    overflow: hidden;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    background:
+        radial-gradient(circle at 20% 80%, #b10f4d 0%, transparent 45%),
+        radial-gradient(circle at 80% 20%, #4a177d 0%, transparent 40%), #120a14;
+    color: white;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 74px;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav .nav-part1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-part1 a {
+    text-decoration: none;
+    color: rgb(191, 189, 189);
+    font-size: 16px;
+}
+
+.nav-part1 a:nth-child(2) {
+    font-size: 16px;
+    color: white;
+    border-bottom: 3px solid rgb(118, 18, 35);
+}
+
+nav i {
+    font-size: 20px;
+}
+
+.hero {
+    height: calc(100% - 80px);
+    width: 100%;
+    display: flex;
+}
+
+.hero .left {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    padding-left: 74px;
+    position: relative;
+}
+
+.left #star1 {
+    position: absolute;
+    color: #23BFD5;
+    left: 52%;
+    top: 7.4%;
+    font-size: 30px;
+}
+
+.left #star2 {
+    position: absolute;
+    color: #E2CE18;
+    left: 13%;
+    top: 22%;
+    font-size: 30px;
+    transform: rotate(38deg);
+}
+
+.left img {
+    height: 220px;
+}
+
+.left p {
+    color: #AF98A3;
+    line-height: 1.4;
+    padding-bottom: 20px;
+}
+
+.left .btns {
+    display: flex;
+    gap: 30px;
+}
+
+.left .game {
+    position: absolute;
+    bottom: 15%;
+    left: 27%;
+    font-size: 192px;
+    text-transform: uppercase;
+    opacity: 0.2;
+}
+
+.btns button {
+    padding: 14px 42px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    color: white;
+    background: linear-gradient(to right, #b71358, #c76118);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.btns button:nth-child(1) i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+}
+
+.btns button:nth-child(2) {
+    background: transparent;
+    border: 1px solid #f82c8b;
+}
+
+.hero .right {
+    position: relative;
+    height: 100%;
+    width: 55%;
+}
+
+.right img {
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero .right p {
+    position: relative;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+    top: 120px;
+    font-size: 14px;
+}
+
+.hero .right p::after {
+    content: '';
+    position: absolute;
+    transform: rotate(90deg);
+    background-color: #aa2860;
+    height: 2px;
+    width: 80px;
+    top: -50px;
+    left: -30px;
+}
+
+.right .icons {
+    position: absolute;
+    right: 24%;
+    top: 27%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(216, 73, 73);
+    font-size: 25px;
+    opacity: 0.5;
+}
+
+.right .squid {
+    position: absolute;
+    top: 0%;
+    right: -7.6%;
+    font-size: 150px;
+    text-transform: uppercase;
+    opacity: 0.1;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+
+.card-container {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    height: 220px;
+    width: 85%;
+    background:
+        radial-gradient(circle at 20% 80%, #b10f4d 0%, transparent 45%),
+        radial-gradient(circle at 80% 20%, #641538 0%, transparent 40%), #120a14;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-container .card {
+    height: 85%;
+    width: 31%;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .play {
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
